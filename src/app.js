@@ -5,8 +5,6 @@ const bodyParser = require('body-parser')
 const morgan = require('morgan')
 const router = require('./routes/mainRouter.js')
 
-require('./db.js')
-
 const app = express()
 
 app.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }))
